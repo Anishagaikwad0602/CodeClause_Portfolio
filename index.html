@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/e3f7af2bc4.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+  <div id="header">
+    <div class="conatiner">
+      <nav>
+        <img src="anisha.png" alt=".." id="hello">
+
+        <i class="fa-solid fa-bars" id="koi" onclick="openmenu()"></i>
+        <ul id="ho">
+          <i class="fa-sharp fa-regular fa-circle-xmark" id="km" onclick="closemenu()"></i>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About </a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul> 
+      </nav>
+      <img src="myyy.jpg" alt="" id="image">
+      <div class="box" id="bottom">
+        <p id="mi">UI/UX designer</p>
+        <h1>Hi, I'am <span id="ig">Anisha</span> Gaikwad</h1>
+
+      </div>
+    </div>
+
+
+  </div>
+  <div id="about">
+    <div class="cont" id="c1">
+      <h1 id="ab">About Me</h1>
+      <hr id="brg">
+      <p id="par">I'am Anisha Gaikwad currently pursuing  my graduation at (Sinhgad Academy of Engineering) .Iam enthusiatic about UI/UX designs and 
+        <br>My hobbies are Travelling and Dancing </p>
+      <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+        <p class="tab-links" id="hello1" onclick="opentab('Education')">Education</p>
+        <p class="tab-links" id="ht" onclick="opentab('project')">Project</p>
+
+
+      </div>
+      <div class="tab-contents active-tab" id="skills">
+        <ul id="side1">
+          <li><span>HTML</span>&nbsp[Intermediate]</li>
+          <li><span>CSS</span>&nbsp[Intermediate]</li>
+          <li><span>Bootstrap</span>&nbsp[Intermediate]</li>
+          <li><span>C</span>&nbsp[Intermediate]</li>
+          <li><span>Java</span>&nbsp[Beginner]</li>
+        </ul>
+      </div>
+      <div class="tab-contents" id="Education">
+        <ul id="side">
+          <li><span>2023-[Current] : </span>Sinhgad Academy of Engineering</li>
+          <li><span>2018-2020 : </span>Nowrosjee wadia college</li>
+          <li><span>2018 : </span>S.V.Union High School</li>
+        </ul>
+      </div>
+      <div class="tab-contents" id="project">
+        <ul id="sole">
+          <li><span>Portfolio : </span>Completed</li>
+          <li><span>Event Management </span></li>
+          <li><span>Health Care Portol : </span>[ongoing]</li>
+
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-----Services---------------------->
+  <div id="services">
+    <div class="cont2">
+      <h1 class="sub-title" id="b1">My Services</h1>
+      <hr id="b2">
+
+      <div class="services-list">
+        <div><i class="fa-solid fa-code"></i>
+
+          <h2 id="io">UI/UX Design.</h2>
+          <p id="h1">A user experience (UX) designer works on a team to create products that provide meaningful and enjoyable experiences for users. </p>
+          <a href="figma13.png" id="a1">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2 id="io1">Web Design.</h2>
+          <p id="h2">Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development rather than software development.</p>
+          
+        </div>
+        <div>
+          <i class="fa-solid fa-computer"></i>
+          <h2 id="io2">Programming.</h2>
+          <p id="h3">Computer programming is the process of performing a particular computation (or more generally, accomplishing a specific computing result), usually by designing and building an executable computer program.</p>
+        
+
+
+        </div>
+      </div>
+    </div>
+    <!-----------------Portfolio-------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 id="u1"> Contact Me</h1>
+            <hr id="u2">
+            <p id="u3"><i class="fa-solid fa-envelope" id="jk"></i><span id="st1">Email id:</span>anishagaikwad0602@gmail.com
+            </p>
+            <p id="u4"><span id="st2">Phone no:</span>7721922829<i class="fa-solid fa-square-phone" id="mk"></i></p>
+            <div class="social-icon">
+              <a href="https://www.instagram.com/_anisha_gaikwad/?next=%2F" id="s1"><img src="instagram.png" alt="" id="q1"></a>
+              <a href="https://www.linkedin.com/in/anisha-gaikwad-220274263/"><img src="linked icon.png" alt="" id="q2"></a>
+
+            </div>
+            <a href="My Resume.docx" class="btn" id="op">  Download CV</a>
+
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" required>
+              <input type="text" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" id="" cols="6" rows="10" placeholder="Your Message"></textarea>
+              <button type="submit" id="d1">Submit</button>
+
+            </form>
+            <span id="msg"></span>
+
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p id="ga1">Copyright @ Anisha with<i class="fa-solid fa-heart" id="j2"></i></p>
+      </div>
+
+    </div>
+
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+    </script>
+
+    <script>
+      var sidemeu = document.getElementById("ho");
+      function openmenu(){
+        sidemeu.style.right = "0";
+
+      }
+      function closemenu(){
+        sidemeu.style.right = "-200px";
+
+      }
+
+
+
+    </script>
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxWSYsSypJGvp3TJmNXIiLfJhgd4bi1YFT-LvjE4v9vpA3V_ASLL5-enDj-JZTfVrH8/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent succesfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+})
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+
+
+
+</body>
+
+</html>
